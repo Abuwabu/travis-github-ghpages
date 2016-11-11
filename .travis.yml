@@ -9,6 +9,8 @@ branches:
   only:
     - develop
 
+script: npm run build
+
 after_success:
 - cd build
 - git init
