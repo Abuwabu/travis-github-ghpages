@@ -13,12 +13,14 @@
  *         Travis-CI: The build
  *         Heroku: Handling Contentful updates
  *
+ * @requires fs
  * @requires pug
  */
 
 
 
 // THE REQUIREMENTS
+const fs = require('fs');
 const pug = require('pug');
 
 
@@ -29,4 +31,5 @@ const post = {
   content: 'Getting Contentful, Github, Github pages, Heroku, and Travis-CI all talking to eachother with webhooks.'
 };
 
-console.log(index(post));
+const data = index(post);
+fs.writeFileSync('build/index.html', data);
