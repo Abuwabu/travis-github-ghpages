@@ -12,3 +12,6 @@ after_success:
 - git commit -m "The Build"
 - git remote add origin git@github.com:pixels-bytes/contentful-travis-github.git
 - git push origin master
+
+deploy:
+  skip_cleanup: true
