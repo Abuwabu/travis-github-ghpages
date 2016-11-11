@@ -13,7 +13,7 @@ script: npm run build
 
 deploy:
   provider: script
-  script: npm run-script deploy
+  script: scripts/deploy-ghpages.sh
   skip_cleanup: true
 
 env:
