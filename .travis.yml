@@ -5,15 +5,13 @@ node_js:
 - '5'
 - '4'
 
-
+branches: develop
 script: npm run build
 
 deploy:
   provider: script
   script: scripts/deploy-ghpages.sh
   skip_cleanup: true
-  on:
-    branch: gh-pages
 
 env:
   global:
