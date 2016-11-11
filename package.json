@@ -4,8 +4,15 @@
   "description": "Getting continous deployment working with Contentful and GitHub Pages, using Travis-CI",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf .build && mkdir .build",
+    "prebuild": "npm run clean -s",
+    "build": "node scripts/index.js",
     "test": ""
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.0-beta6",
+    "slm": "^0.5.1"
+  }
 }
