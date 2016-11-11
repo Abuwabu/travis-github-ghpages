@@ -7,7 +7,7 @@
     "clean": "rm -rf build && mkdir build",
     "prebuild": "npm run clean -s",
     "build": "node scripts/index.js",
-    "deploy": "deploy-ghpages.sh",
+    "deploy": "scripts/deploy-ghpages.sh",
     "test": ""
   },
   "author": "",
