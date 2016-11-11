@@ -5,6 +5,17 @@ node_js:
 - '5'
 - '4'
 
+branches:
+  only:
+    - develop
+
+env:
+  global:
+    - GH_REF: github.com/pixels-bytes/contentful-travis-github.git
+
+script:
+  - npm run build
+
 after_success:
 - cd build
 - git init
