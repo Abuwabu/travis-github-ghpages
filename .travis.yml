@@ -5,7 +5,10 @@ node_js:
 - '5'
 - '4'
 
-branches: develop
+branches:
+  only:
+    - develop
+
 script: npm run build
 
 deploy:
