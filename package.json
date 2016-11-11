@@ -1,0 +1,11 @@
+{
+  "name": "travis-contentful-github",
+  "version": "1.0.0",
+  "description": "Getting continous deployment working with Contentful and GitHub Pages, using Travis-CI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
