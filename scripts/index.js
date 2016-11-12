@@ -27,8 +27,8 @@ const pug = require('pug');
 
 const index = pug.compileFile('index.pug');
 const post = {
-  title: 'Contentful — GitHub — Github Pages — Heroku — Travis-CI',
-  content: 'Getting Contentful, Github, Github pages, Heroku, and Travis-CI all talking to eachother with webhooks. Looks like we\'re good to go with Travis-CI/GitHub/Github Pages'
+  title: 'Travis-CI — GitHub — Github Pages',
+  content: 'Getting Travis-CI to pull repository from Github, manage the build and deploy to Github pages.'
 };
 
 const data = index(post);
